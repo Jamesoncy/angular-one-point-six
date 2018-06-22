@@ -10,7 +10,13 @@ angular.module('myApp.login', ['ngRoute'])
 }])
 
 .controller('LoginCtrl', ['$scope', function($scope) {
+  $scope.username = null;
+  $scope.password = null;
+
   $scope.login = function() {
-    alert();
+    var username = $scope.username;
+    var password = $scope.password;
+    alert(username + " " + password);
   }
+
 }]);
